@@ -1,11 +1,12 @@
-=== Plugin Name ===
+=== BuddyPress Group Livechat ===
 Contributors: aekeron
+Author: David Cartwright
 Tags: buddypress, ajax, chat, groups
 Requires at least: WordPress 3.1.0, BuddyPress 1.2.8
 Tested up to: WordPress 3.1.0 / BuddyPress 1.2.8
 Stable tag: 1.0
 
-BuddyPress Group Livechat chat.
+Basic live chat within groups.
 
 == Description ==
 
@@ -24,4 +25,4 @@ Download and upload the plugin to your plugins folder. Activate.
 == Notes ==
 
 History.txt - contains all the changes since version 1.0
-License.txt - contains the licensing details for this component.
+License.txt - contains the licensing details for this component
