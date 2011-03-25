@@ -1,6 +1,5 @@
 === BuddyPress Group Livechat ===
 Contributors: aekeron
-Author: David Cartwright
 Tags: buddypress, ajax, chat, groups
 Requires at least: WordPress 3.1.0, BuddyPress 1.2.8
 Tested up to: WordPress 3.1.0 / BuddyPress 1.2.8
