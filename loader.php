@@ -4,7 +4,7 @@ Plugin Name: BuddyPress Group Live Chat
 Plugin URI: http://namoo.co.uk
 Description: Ajax live chat for groups
 Version: 1.0
-Revision Date: Mar 20, 2011
+Revision Date: Mar 25, 2011
 Requires at least: WordPress 3.1.0, BuddyPress 1.2.8
 Tested up to: WordPress 3.1.0 / BuddyPress 1.2.8
 License: AGPL
