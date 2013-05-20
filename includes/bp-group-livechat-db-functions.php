@@ -44,7 +44,7 @@ function bp_group_livechat_who_is_online() {
 		}
 	}
 }
-add_action( 'init', 'bp_group_livechat_who_is_online' );
+add_action( 'wp_ajax_bp_livechat_heartbeat', 'bp_group_livechat_who_is_online' );
 
 function bp_group_livechat_new_message() {
 	global $bp, $wpdb;
@@ -69,7 +69,7 @@ function bp_group_livechat_new_message() {
 		}
 	}
 }
-add_action( 'init', 'bp_group_livechat_new_message' );
+add_action( 'wp_ajax_bp_livechat_new_message', 'bp_group_livechat_new_message' );
 
 function bp_group_livechat_load_messages() {
 	global $bp, $wpdb;
@@ -99,5 +99,5 @@ function bp_group_livechat_load_messages() {
 		}
 	}
 }
-add_action( 'init', 'bp_group_livechat_load_messages' );
+add_action( 'wp_ajax_bp_livechat_load_messages', 'bp_group_livechat_load_messages' );
 ?>

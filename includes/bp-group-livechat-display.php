@@ -14,21 +14,21 @@ jQuery(document).ready(function(){
 });
 
 function bpGroupLivechatHeartbeat(i) {
-	jQuery.post("<?php echo $bp->loggedin_user->domain . $bp->current_component . '/' . $bp->current_action; ?>", { _ajax_nonce: "<?php echo wp_create_nonce( 'groups_livechat_heartbeat_' . $bp->groups->current_group->id ); ?>", bp_group_livechat_online_query: "1", bp_group_livechat_group_id: "<?php echo $bp->groups->current_group->id; ?>" }, function(data) {
+	jQuery.post(ajaxurl, { _ajax_nonce: "<?php echo wp_create_nonce( 'groups_livechat_heartbeat_' . $bp->groups->current_group->id ); ?>", bp_group_livechat_online_query: "1", bp_group_livechat_group_id: "<?php echo $bp->groups->current_group->id; ?>", action: 'bp_livechat_heartbeat' }, function(data) {
 		jQuery('#livechat-users-online').html(data);
 	});
 }
 
 function bpGroupLivechatsubmitNewMessage(){
 	var message_content = jQuery('#bp_group_livechat_textbox').val();
-	jQuery.post("<?php echo $bp->loggedin_user->domain . $bp->current_component . '/' . $bp->current_action; ?>", { _ajax_nonce: "<?php echo wp_create_nonce( 'groups_livechat_new_message_' . $bp->groups->current_group->id ); ?>", bp_group_livechat_new_message: "1", bp_group_livechat_group_id: "<?php echo $bp->groups->current_group->id; ?>", bp_group_livechat_textbox: message_content }, function() {
+	jQuery.post(ajaxurl, { _ajax_nonce: "<?php echo wp_create_nonce( 'groups_livechat_new_message_' . $bp->groups->current_group->id ); ?>", bp_group_livechat_new_message: "1", bp_group_livechat_group_id: "<?php echo $bp->groups->current_group->id; ?>", bp_group_livechat_textbox: message_content, action: 'bp_livechat_new_message' }, function() {
 		jQuery('#bp_group_livechat_textbox').val('');
 		bpGroupLivechatLoadMessages();
 	});
 }
 
 function bpGroupLivechatLoadMessages() {	
-	jQuery.post("<?php echo $bp->loggedin_user->domain . $bp->current_component . '/' . $bp->current_action; ?>", { _ajax_nonce: "<?php echo wp_create_nonce( 'groups_livechat_load_messages_' . $bp->groups->current_group->id ); ?>", bp_group_livechat_load_messages: "1", bp_group_livechat_group_id: "<?php echo $bp->groups->current_group->id; ?>" }, function(data) {
+	jQuery.post(ajaxurl, { _ajax_nonce: "<?php echo wp_create_nonce( 'groups_livechat_load_messages_' . $bp->groups->current_group->id ); ?>", bp_group_livechat_load_messages: "1", bp_group_livechat_group_id: "<?php echo $bp->groups->current_group->id; ?>", action: 'bp_livechat_load_messages' }, function(data) {
 		jQuery('#bp-livechat-chat-container').html(data);
 	});
 }

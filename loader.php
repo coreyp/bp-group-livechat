@@ -1,16 +1,16 @@
 <?php
 /*
 Plugin Name: BuddyPress Group Live Chat
-Plugin URI: http://namoo.co.uk
+Plugin URI: http://linktart.co.uk
 Description: Ajax live chat for groups
-Version: 1.0
-Revision Date: Mar 25, 2011
-Requires at least: WordPress 3.1.0, BuddyPress 1.2.8
-Tested up to: WordPress 3.1.0 / BuddyPress 1.2.8
+Version: 1.1
+Revision Date: May 20, 2013
+Requires at least: WordPress 3.5.1, BuddyPress 1.7.2
+Tested up to: WordPress 3.5.1 / BuddyPress 1.7.2
 License: AGPL
 Author: David Cartwright
-Author URI: http://namoo.co.uk
-Site Wide Only: true
+Author URI: http://linktart.co.uk
+Network: true
 */
 
 /* Only load the component if BuddyPress is loaded and initialized. */

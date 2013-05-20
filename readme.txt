@@ -1,9 +1,9 @@
 === BuddyPress Group Livechat ===
 Contributors: aekeron
 Tags: buddypress, ajax, chat, groups
-Requires at least: WordPress 3.1.0, BuddyPress 1.2.8
-Tested up to: WordPress 3.1.0 / BuddyPress 1.2.8
-Stable tag: 1.0
+Requires at least: WordPress 3.5.1, BuddyPress 1.7.2
+Tested up to: WordPress 3.5.1 / BuddyPress 1.7.2
+Stable tag: 1.1
 
 Basic live chat within groups.
 
